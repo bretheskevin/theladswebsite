@@ -47,7 +47,7 @@ export default {
     if (config.domain === "localhost:3000") {
       await this.$store.$axios.$get(`http://${config.domain}/api/users/${id}`)
     } else {
-      await this.$store.$axios.$get(`http://${config.domain}/api/users/${id}`)
+      await this.$store.$axios.$get(`https://${config.domain}/api/users/${id}`)
     }
 
     this.edit.verified = member.verified
