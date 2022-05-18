@@ -55,7 +55,7 @@ export default {
   async mounted() {
     const config = this.$store.state.store.config
 
-    let members = await this.$store.$axios.$get(`http://${config.domain}/api/members`)
+    let members = await this.$store.$axios.$get(`https://${config.domain}/api/members`)
 
     members = members.sort(function(a, b) {
       return a.rank - b.rank
