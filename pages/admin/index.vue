@@ -30,9 +30,14 @@
 export default {
   name: 'index',
   async asyncData({ store }) {
-    const config = await store.state.store.config
+    const config = store.state.store.config
 
-    const members = await store.$axios.$get(`http://${config.domain}/api/users`)
+    let members;
+    if (config.domain === "localhost:3000") {
+      members = await store.$axios.$get(`http://${config.domain}/api/users`)
+    } else {
+      members = await store.$axios.$get(`https://${config.domain}/api/users`)
+    }
 
     return { members }
   },
