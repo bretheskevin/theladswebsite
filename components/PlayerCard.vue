@@ -13,7 +13,7 @@
                  class='rounded-4 mr-3'
             />
           </div>
-          <p>{{ member.name }}</p>
+          <p>{{ member.username }}</p>
         </div>
         <div class='card-content txt-center pt-0'>
           <ul>

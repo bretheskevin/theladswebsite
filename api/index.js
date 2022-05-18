@@ -129,7 +129,8 @@ app.get('/members', async (req, res) => {
       ...memberRanking,
       user_id: user.id,
       avatar_url: user.profile_picture_link,
-      score: memberRanking.score.toFixed(2)
+      score: memberRanking.score.toFixed(2),
+      username: user.name
     }
   })
 
@@ -442,8 +443,6 @@ app.post('/avatar', async (req, res) => {
             profile_picture_link: user.profile_picture_link
           }
         })
-
-        console.log(user)
 
         token = jwt.sign(user, SECRET)
         res.status(200).send({ token, user, success: 'Avatar has been successfully updated' })
