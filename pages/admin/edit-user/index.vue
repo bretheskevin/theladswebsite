@@ -43,7 +43,12 @@ export default {
     const id = window.location.href.split('id=')[1]
     const config = this.$store.state.store.config
 
-    const member = await this.$store.$axios.$get(`http://${config.domain}/api/users/${id}`)
+    let member;
+    if (config.domain === "localhost:3000") {
+      await this.$store.$axios.$get(`http://${config.domain}/api/users/${id}`)
+    } else {
+      await this.$store.$axios.$get(`http://${config.domain}/api/users/${id}`)
+    }
 
     this.edit.verified = member.verified
     this.edit.admin = member.admin
