@@ -94,16 +94,14 @@
 export default {
   name: 'PlayerCard',
   props: ['member'],
-  methods: {
+  computed: {
     records() {
       let records = this.member.records
       records = records.filter(record => record.progress === 100)
       return records.map(record => ({ ...record.demon, video: record.video }))
     },
-  },
-  computed: {
     hardest() {
-      let demons = this.records()
+      let demons = this.records
       demons = demons.sort(function(a, b) {
         return a.position - b.position
       })
@@ -120,7 +118,7 @@ export default {
       return demons.length > 0 ? demons[0] : []
     },
     main() {
-      let demons = this.records()
+      let demons = this.records
       demons = demons.filter(demon => demon.position <= 75)
 
       demons = demons.sort(function(a, b) {
@@ -129,7 +127,7 @@ export default {
       return demons
     },
     extended() {
-      let demons = this.records()
+      let demons = this.records
       demons = demons.filter(demon => demon.position > 75 && demon.position <= 150)
       demons = demons.sort(function(a, b) {
         return a.position - b.position
@@ -137,7 +135,7 @@ export default {
       return demons
     },
     legacy() {
-      let demons = this.records()
+      let demons = this.records
       demons = demons.filter(demon => demon.position > 150)
       demons = demons.sort(function(a, b) {
         return a.position - b.position
