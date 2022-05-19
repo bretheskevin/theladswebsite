@@ -54,8 +54,8 @@ export default {
   },
   async mounted() {
     const config = this.$store.state.store.config
-    let members;
 
+    let members;
     if (config.domain === "localhost:3000") {
       members = await this.$store.$axios.$get(`http://${config.domain}/api/members`)
     } else {
