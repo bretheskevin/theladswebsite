@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-<!--    <StreamingList />-->
+    <StreamingList />
 
     <div class='container grey light-4 p-4 pt-1 mt-5 rounded-2'>
       <h1 class='font-s6 txt-grey txt-dark-4 txt-center'>The Lads</h1>
