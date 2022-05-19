@@ -114,7 +114,7 @@ app.get('/members', async (req, res) => {
     if (memberRanking === undefined) {
       memberRanking = {
         rank: 99999999999,
-        score: -1,
+        score: 0,
         nationality: {
           country_code: "?",
           nation: "?",
