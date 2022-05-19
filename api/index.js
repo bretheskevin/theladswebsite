@@ -39,6 +39,13 @@ app.get("/streamers/", async (req, res) => {
   users = users.filter(user => user.twitch_username !== "")
   users = users.map(user => user.twitch_username)
 
+  if (users.length === 0) {
+    res.send({
+      data: []
+    })
+    return
+  }
+
   const streams = await twitch.getStreams({ channels: users })
   res.send(streams)
 })
