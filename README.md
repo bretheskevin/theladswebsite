@@ -107,7 +107,7 @@ npm run start
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-# API
+## API
 
 Check this [documentation](https://documenter.getpostman.com/view/13748740/Uz5AtKgG) to see how to use the API.
 
