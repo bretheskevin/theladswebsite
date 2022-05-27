@@ -1,4 +1,4 @@
-![img.png](static/logo.png)
+<img src="https://github.com/bretheskevin/theladswebsite/blob/main/static/logo.png" alt="logo" width="200"/>
 
 # The Lads Website
 
