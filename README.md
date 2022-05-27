@@ -1,6 +1,6 @@
-<div style="text-align:center">
+<p align="center">
     <img src="https://github.com/bretheskevin/theladswebsite/blob/main/static/logo.png" alt="logo" width="200"/>
-</div>
+</p>
 
 # The Lads Website
 
