@@ -1,3 +1,4 @@
+![img.png](static/logo.png)
 
 # The Lads Website
 
