@@ -20,6 +20,7 @@ It's not intended to be useful for the community.
         + [Launch the server in development mode](#launch-the-server-in-development-mode)
         + [Build for production and launch server](#build-for-production-and-launch-server)
 - [API](#api)
+- [Admin Dashboard](#admin-dashboard)
 - [Special Directories](#special-directories)
   + [`assets`](#-assets-)
   + [`components`](#-components-)
@@ -40,6 +41,8 @@ It's not intended to be useful for the community.
 ## To Fix
 
 - Leaderboard doesn't load when running the project in production mode
+- Can't login on mobile
+- Can register on mobile but show an error like it didn't work
 
 ## Build Setup
 
@@ -113,6 +116,43 @@ For detailed explanation on how things work, check out the [documentation](https
 ## API
 
 Check this [documentation](https://documenter.getpostman.com/view/13748740/Uz5AtKgG) to see how to use the API.
+
+## Admin dashboard
+
+First, you have to manually edit the database to make your account admin.
+
+![img.png](readme/img1.png)
+
+The default value is 0. Just change it to 1 like the pic above.
+Now, when you'll login to your account, you'll see the admin field in the navbar.
+
+![img.png](readme/img2.png)
+
+This dashboard give you access to every user registered and allows you to edit their data.
+
+![img.png](readme/img3.png)
+![img.png](readme/img4.png)
+
+This is the same page that the one that users can access by going to /profile to edit their profile. 
+
+In addition, you have 3 new fields available since you're an admin.
+
+- **Admin** - Set it to 0 or 1 to make the user an admin or not. You don't have to go to the database anymore to make users admin.
+- **Verified** - Set it to make the user a member of the team, he will now appear to the leaderboard.
+- **Pointercrate ID** - Put the pointercrate ID of the user their, it will be used to fetch the data for the leaderboard.
+
+Here is an example of how to get the pointercrate ID of an user.
+Ask the member of your team what is his pointercrate username.
+
+For the example, the username is **Hikudo**
+
+To get it, got to [https://pointercrate.com/api/v1/players?name_contains=hikudo](https://pointercrate.com/api/v1/players?name_contains=hikudo)
+
+Here is the response :
+
+![img.png](readme/img5.png)
+
+The first field "id" is the pointercrate ID that you have to use.
 
 ## Special Directories
 
