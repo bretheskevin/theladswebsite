@@ -1,4 +1,6 @@
-<img src="https://github.com/bretheskevin/theladswebsite/blob/main/static/logo.png" alt="logo" width="200"/>
+<div style="text-align:center">
+    <img src="https://github.com/bretheskevin/theladswebsite/blob/main/static/logo.png" alt="logo" width="200"/>
+</div>
 
 # The Lads Website
 
