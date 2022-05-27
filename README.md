@@ -138,7 +138,7 @@ This is the same page that the one that users can access by going to /profile to
 In addition, you have 3 new fields available since you're an admin.
 
 - **Admin** - Set it to 0 or 1 to make the user an admin or not. You don't have to go to the database anymore to make users admin.
-- **Verified** - Set it to make the user a member of the team, he will now appear to the leaderboard.
+- **Verified** - Set it to 1 to make the user a member of the team, he will now appear to the leaderboard.
 - **Pointercrate ID** - Put the pointercrate ID of the user their, it will be used to fetch the data for the leaderboard.
 
 Here is an example of how to get the pointercrate ID of an user.
