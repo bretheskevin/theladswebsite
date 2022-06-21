@@ -123,12 +123,12 @@ First, you have to manually edit the database to make your account admin.
 
 ![img.png](readme/img1.png)
 
-The default value is 0. Just change it to 1 like the pic above.
+The default value is 0. Just change it to 1 like the picture above.
 Now, when you'll login to your account, you'll see the admin field in the navbar.
 
 ![img.png](readme/img2.png)
 
-This dashboard give you access to every user registered and allows you to edit their data.
+This dashboard give you access to every users registered and allows you to edit their data.
 
 ![img.png](readme/img3.png)
 ![img.png](readme/img4.png)
