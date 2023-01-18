@@ -40,7 +40,6 @@ It's not intended to be useful for the community.
 
 ## To Fix
 
-- Leaderboard doesn't load when running the project in production mode
 - Can't login on mobile
 - Can register on mobile but show an error like it didn't work
 
