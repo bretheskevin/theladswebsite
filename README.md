@@ -53,6 +53,7 @@ npm install
 ### Generate the database
 ```bash
 npx prisma db push
+npx browserslist@latest --update-db
 ```
 
 
